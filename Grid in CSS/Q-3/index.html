@@ -1,0 +1,42 @@
+<!-- TASK 3 problem statement
+write code to arrange containers with texts A,B,C, and D as shown in the below image. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid auto row</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: "a b"; 
+            /* grid-template-columns: 100px 200px; */
+            /* with out auto column I use grid-template-column where I want to add different coloumn different size */
+            grid-auto-columns: 500px 100px;
+            /* grid-template-rows: 100px 150px 200px; */
+             /* with out auto row I use grid-template-row where I want to add different coloum different size */
+            grid-auto-rows:100px;
+            grid-gap:10px;
+        }
+        .box{
+            background: yellow;
+            border:2px solid black;
+            border-radius:5px;
+        }
+
+    </style>
+</head>
+<!-- If I use grid auto row and column give a valu so this valu automatic applies in all content -->
+<body>
+
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+    </div>
+</body>
+</html>

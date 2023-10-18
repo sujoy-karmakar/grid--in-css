@@ -1,0 +1,49 @@
+<!-- TASK 4 problem statement
+write CSS to shoow numbers as shown in the figure, without alterning the below html code.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(6, 100px);
+            grid-gap:10px;
+        }
+        .box{
+            background-color: rgb(55, 54, 54);
+            color:white;
+           border-radius: 5px;
+           font-size:150%;
+           padding:20px;
+        }
+        .box:nth-child(even){
+            background-color: rgb(134, 132, 132);
+            color:black;
+
+        }
+        .box1{
+            order:1;
+        }
+        .box2{
+            order:2;
+        }
+     
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        </div>
+</body>
+</html>

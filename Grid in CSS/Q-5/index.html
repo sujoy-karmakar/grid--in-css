@@ -1,0 +1,52 @@
+<!-- Task 5: Problem Statement
+    Explain the difference between justify-items and justify-self using code examples.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:auto auto auto;
+            padding: 5px;
+            grid-auto-rows: 100px;
+            border:1px solid black;
+            /* justify-content: center; */
+            grid-gap:5px;
+        }
+        .box{
+            background-color: bisque;
+            width:100px;
+            height:100px;
+            border:1px solid black;
+            align-items: center;
+        }
+        .box1{
+            justify-self:center;
+        }
+        .box3 {
+            justify-self: end;
+        }
+        .box5{
+            justify-self: center;
+        }
+        
+
+    </style>
+ </head>
+ <!-- Justify-items apply to grid containers and justify-self applies to grid-items. -->
+ <body>
+    
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+    </div>
+ </body>
+ </html>
